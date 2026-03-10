@@ -56,11 +56,11 @@ export default function Hero() {
 
         <div className="relative z-10 flex flex-col items-center gap-4 sm:gap-6 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[90%] tracking-[-0.03em] text-black mix-blend-exclusion max-w-2xl">
-            Ускорьте ваш маркетинг
+            Освойте профессиональный язык быстро
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl leading-[160%] text-black max-w-2xl px-4">
-            Дайте вашей команде свободу творить, а не настраивать. Создавайте, запускайте и масштабируйте цифровые продукты с уверенностью и скоростью.
+            Эффективные техники запоминания терминов и профессиональной лексики. Учитесь в 3 раза быстрее с научно обоснованными методами и персональными карточками.
           </p>
 
           <AnimatePresence initial={false}>
@@ -83,7 +83,7 @@ export default function Hero() {
                   onClick={handleExpand}
                   className="h-15 px-6 sm:px-8 py-3 text-lg sm:text-xl font-regular text-[#E3E3E3] tracking-[-0.01em] relative"
                 >
-                  Запросить демо
+                  Начать бесплатно
                 </motion.button>
               </motion.div>
             )}
@@ -133,7 +133,7 @@ export default function Hero() {
               >
                 <div className="flex-1 flex flex-col justify-center space-y-3 w-full">
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white leading-none tracking-[-0.03em]">
-                    Связаться с нами
+                    Начните учиться прямо сейчас
                   </h2>
 
                   <div className="space-y-4 sm:space-y-6 pt-4">
@@ -150,7 +150,7 @@ export default function Hero() {
                       </div>
                       <div>
                         <p className="text-sm sm:text-base text-white leading-[150%]">
-                          Узнайте, как FlowPulse может трансформировать ваш бизнес с индивидуальными решениями и гибкими тарифами.
+                          Интервальные повторения, мнемотехники и контекстные карточки — всё для устойчивого запоминания терминов в вашей области.
                         </p>
                       </div>
                     </div>
@@ -172,7 +172,7 @@ export default function Hero() {
                       </div>
                       <div>
                         <p className="text-sm sm:text-base text-white leading-[150%]">
-                          Убедитесь лично, как платформа FlowPulse ускоряет разработку и приносит результаты.
+                          Персональные наборы слов по профессии, отрасли или уровню — от новичка до эксперта. Прогресс виден с первых занятий.
                         </p>
                       </div>
                     </div>
@@ -180,7 +180,7 @@ export default function Hero() {
 
                   <div className="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-white/20">
                     <p className="text-lg sm:text-xl lg:text-2xl text-white leading-[150%] mb-4">
-                      FlowPulse позволяет нашей команде работать быстрее и выпускать продукты с уверенностью.
+                      За месяц я освоила юридическую терминологию, которую не могла запомнить годами. Метод реально работает!
                     </p>
                     <div className="flex items-center gap-3 sm:gap-4">
                       <img
@@ -190,7 +190,7 @@ export default function Hero() {
                       />
                       <div>
                         <p className="text-base sm:text-lg lg:text-xl text-white">Анна Смирнова</p>
-                        <p className="text-sm sm:text-base text-white/70">Директор по маркетингу, TechVision</p>
+                        <p className="text-sm sm:text-base text-white/70">Юрист, стаж 3 года</p>
                       </div>
                     </div>
                   </div>
@@ -236,25 +236,26 @@ export default function Hero() {
                           htmlFor="website"
                           className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                         >
-                          САЙТ КОМПАНИИ
+                          ПРОФЕССИЯ
                         </label>
                         <input
-                          type="url"
-                          id="website"
-                          name="website"
+                          type="text"
+                          id="profession"
+                          name="profession"
+                          placeholder="Юрист, врач, IT..."
                           className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
                         />
                       </div>
-                      <div className="sm:w-32 w-full">
+                      <div className="sm:w-36 w-full">
                         <label
-                          htmlFor="company-size"
+                          htmlFor="level"
                           className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                         >
-                          РАЗМЕР
+                          УРОВЕНЬ
                         </label>
                         <select
-                          id="company-size"
-                          name="company-size"
+                          id="level"
+                          name="level"
                           className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white focus:outline-none focus:ring-2 focus:ring-white/20 transition-all appearance-none cursor-pointer text-sm h-10"
                           style={{
                             backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")`,
@@ -263,11 +264,10 @@ export default function Hero() {
                             backgroundSize: "1rem",
                           }}
                         >
-                          <option value="1-10">1-10</option>
-                          <option value="11-50">11-50</option>
-                          <option value="51-200">51-200</option>
-                          <option value="201-500">201-500</option>
-                          <option value="501+">501+</option>
+                          <option value="beginner">Новичок</option>
+                          <option value="middle">Средний</option>
+                          <option value="advanced">Продвинутый</option>
+                          <option value="expert">Эксперт</option>
                         </select>
                       </div>
                     </div>
@@ -278,12 +278,13 @@ export default function Hero() {
                         htmlFor="message"
                         className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                       >
-                        КОММЕНТАРИЙ
+                        КАКУЮ ЛЕКСИКУ ХОТИТЕ ОСВОИТЬ?
                       </label>
                       <textarea
                         id="message"
                         name="message"
                         rows={3}
+                        placeholder="Например: медицинские термины, юридические документы, IT-английский..."
                         className="w-full px-4 py-3 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all resize-none text-sm"
                       />
                     </div>
@@ -293,7 +294,7 @@ export default function Hero() {
                       type="submit"
                       className="w-full px-8 py-2.5 rounded-full bg-white text-[#0041C1] font-medium hover:bg-white/90 transition-colors tracking-[-0.03em] h-10"
                     >
-                      Отправить
+                      Получить доступ
                     </button>
                   </form>
                 </div>
